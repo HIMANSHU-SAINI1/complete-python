@@ -29,3 +29,8 @@ print("\N{dollar sign}")    #name in unicode database
 print("\N{grinning face}")  #name in unicode database
 
 
+#print arguments
+print('hello',5,12.75)    #print can take multiple objects as input
+print('hello',5,12.54,sep='*',end='\t')   #the separator and end statement of print can be changed
+print("world")
+print(object,sep='',end='\n',file=SystemError,flush=True) #dispaly and forcefully we can flush something in print
