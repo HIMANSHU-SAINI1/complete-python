@@ -1,0 +1,60 @@
+compile(pattern,flag=0)
+
+validation:
+        match(pattern,string,flag=0)
+        fullmatch(pattern,string,flag=0)
+
+search and extract:
+        search(pattern,string,flag=0)
+        findall(pattern,string,flag=0)
+        split(pattern,string,maxsplit=0,flag=0)
+
+
+import re
+
+re.match('abc','abcdef')
+re.fullmatch('python','python').group() #group will give the string
+
+
+re.search('very','python is very easy').span() #span will give the indices
+
+re.findall('can',can you can a can as a canner')
+
+
+
+
+
+QUANTIFIERS:
+
+
++   MEANS 1 OR MORE TIMES A PATTERN CAN OCCUR
+*    MEANS 0 OR MORE TIMES
+?  EXACTLY O OR 1
+{M}   EXACTLY M TIMES
+{M,N}   FROM M TO N
+
+
+
+
+SPECIAL CHARACTERS:
+
+[.....]   SET OF POSSIBLE CHARACTERS
+[^.....]   ALL CHARACTERS EXCEPT IN BRACKET
+.           ANY CHARACTER EXCEPT NEWLINE
+^         BEGINNING OF A string
+$       END OF A string
+R|S     R OR S
+
+
+
+ESCAPE SEQUENCES
+\d    DIGITS[0-9]
+\D    NON-DIGITS[a-zA-Z+-[...]]
+\w     ALPHANUMERIC [a-ZA-Z0-9]
+\W     NON-ALPHANUMERIC
+\s    WHITE SPACE   \t\f\r\n 
+\S     non-whitespace
+\A     starting of a string^
+\Z      end of a string S 
+
+ 
