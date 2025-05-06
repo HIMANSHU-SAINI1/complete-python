@@ -1,0 +1,124 @@
+functions:
+    performs a specific task
+    reusable-write once,use many times
+    support team-based development
+    takes input as parameters and returns output
+    built-in and user-defined
+
+
+how to write a function:
+general structure---- def fun_name():
+                            statement1
+                            statement2
+                            return value
+
+#example:
+for cuboid:
+    def volume(length,breadth,height)
+        vol=length*breadth*height
+        return vol
+v=volume(10,5,3)
+print(v)
+
+positional arguments:
+---pass in same order in the order require
+
+keyword:
+---v=volume(length=10,breadth=5,height=3)
+----pass in any order
+
+
+default arguments:
+    def volume(l,b=1,h=1):
+        v=l*b*h
+        return value
+----fill from right side only
+----function takes any type of arguments
+---pass any type of arguments
+---default arguments are created only first time
+
+positional-only arguments:
+def fun(a,b,/,c,d): ---- / by using slash divides the portion in which starting part is positional only and second half can be anything.
+    print(a,b,c,d)
+
+fun(5,10,15,20)
+----/ is used for defining positional-only
+---- def fun (/,a,b,c,d) invalid notation,atleast one argument must be positional.
+
+
+
+keyword-only arguments:
+def fun(a,b,*,c,d):  -----* by using star divides the portion in which starting part is anything and second part is keyword only.
+    print(a,b,c,d)
+
+---- * is used for defining keyword-only arguments
+---- def fun(a,b,c,d,*)  invalid notation,at least one argument must be keyword-only
+
+positional-only & keyword-only mixed:
+def fun(a,b,/,c,d,*,e,f): -----a,b are positional only and c,d are positional or keyword and e,f are keyword-only
+    print(a,b,c,d,e,f)
+
+
+
+variable length positional arguments:
+def fun(*args):  ----asterik takes any number of arguments
+    print(args)
+
+----*args is uesd for variable length argument
+----tuple is created for variable length arguments
+---- fun(a,b,*args) a and b mustbe passed as positional-only
+----fun(*args,a,b) a and b must be passed as keyword-only
+----fun(*l1) unpacking actual arguments
+
+
+variable length keyword arguments:
+def fun(**kwargs): ----double asterik takes any number of keyword arguments
+    print(kwargs)
+
+----**kwargs is used for variable length keyword arguments
+----dictionary is created for keyword arguments
+fun(**kwargs,a,b) arguments not allowed after'kwargs'
+fun(a,b,**kwargs) a and b can pe positional arguments
+fun(*args,a,b,**kwargs) a and b must be keyword only
+
+
+
+multiple returns:
+def fun(a,b,c):
+    sum=a+b+c
+    prod=a*b*c
+    return sum,prod
+
+
+
+iterators and generators:
+iterators:
+l1=[1,2,3,4,5]
+it=iter(l1)
+next(it)
+---iter(iterable)gives an iterator on iterable
+---next(iterable)gives iterator and moves to next
+
+generators:
+def myrange(n): #to generate range
+    i=0
+    while i<n:
+        yield i  
+        i+=1
+m=myrange(4)
+next(m)   
+
+
+
+local and global variables:
+---variables declared outside the function is global variables and inside one is local variables
+---global variable cannot be modified unless global g is declared inside the function
+---must be declared before function call(global variables)
+---locals() gives a dictionary of local variables
+---globals() gives a dictionary of global variables
+
+recursive functions:
+def fun(n):
+    if n>0:
+        print(n)
+        fun(n-1)
