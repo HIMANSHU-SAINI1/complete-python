@@ -160,3 +160,28 @@ next(iterator,default)
 
 MODULES:
 ---they contain predefined variables,functions,classes and objects.
+
+MORE ABOUT FUNCTIONS:
+---FUNCTIONS ARE objects
+---FUNCTIONS INSIDE FUNCTION IS POSSIBLE WHICH MEANS NESTED FUNCTION
+---function can takes function as parameter
+---outer function returns inner function means returning a function
+---closure function:
+        --nested function
+        --returning function
+        --inner function access outer variables
+---decorator function:
+        --closure function + function as parameter
+
+---LAMBDA FUNCTIONS:
+    --anonymous function
+    --simple function
+    --single line function
+    --functional programming    
+    example: normal function= def double(x)
+                                    return x*2
+            LAMBDA=  k=lambda x:x*2
+
+---CALLER CLASS:
+    --it is like closure function
+    
