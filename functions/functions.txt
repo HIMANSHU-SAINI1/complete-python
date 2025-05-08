@@ -122,3 +122,41 @@ def fun(n):
     if n>0:
         print(n)
         fun(n-1)
+
+
+
+MATHEMATICAL FUNCTIONS(BUILT-IN):
+
+abs(x,/)  ----gives unsigned value and for imaginary it gives its magnitude
+pow(base,exp,mod=none,/) ---gives power of the number
+round(number,ndigits=none) -----rounding number to nearest integar
+divmod(a,b,/) ----gives quotient as well as remainder
+min(iterable,*,key=none,default=none) ----gives minimum value
+max(iterable,*,key=none,default=none)  ---gives maximum value
+sum(iterable,start=0,/) ----gives sum of the numbers
+eval(expression,globals=none,locals=none)---evaluate the expression in the form of string
+
+
+OBJECT & ATTRIBUTE FUNCTION(BUILT-IN):
+
+type(object,bases=none,dict=none) ----gives type of object
+isinstance(class,classinfo,/) ----tell given object is instance of given class or not
+hasattr(object,attribute)  ----it check about a class has so n so method or not
+getattr(object,attribute,default) ----it gives reference from any particular class and can be used
+id(object,/) -----gives id of the object
+dir(object=none,/) ----gives all the methods of class
+repr(object) ----actual representation of the data given in program
+
+
+ITERATION AND SEQUENCE FUNCTIONS(BUILT-IN):
+
+sorted(iterable,/,*,key=none,reverse=false) ---sort elements
+reversed(seq,/) ---reverse the list and then assign to make the list out of it
+slice(start,stop,step) -----slice some part 
+iter(callable,sentinel)
+next(iterator,default)
+
+
+
+MODULES:
+---they contain predefined variables,functions,classes and objects.
