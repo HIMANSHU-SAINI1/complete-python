@@ -1,0 +1,26 @@
+to open a file:
+ file=open('file_name','open mode')
+
+modes of opening a file:
+MODE                DESCRIPTION
+r                   to read data from file
+w                   to write data from file
+a                   to append data to the file
+r+                  to read and write of a file
+w+                  to write and read data into a file
+a+                  to append and read data of a file
+x                   to open the file in exclusive creation mode
+
+
+operations on file:
+file.read([size])
+file.readline([size])
+file.readlines([sizehint])
+file.write(str)
+file.writelines(sequence)
+file.flush()
+file.close()
+readable()
+writable()
+file.tell()
+file.seek(offset[,whence])
