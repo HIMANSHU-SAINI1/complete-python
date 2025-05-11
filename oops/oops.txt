@@ -1,0 +1,28 @@
+class:
+--contains properties/data members
+--methods/functions
+
+how to write a class:
+class rectangle:
+    def __init__(self):
+        self.length=10
+        self.breadth=5
+    def area(self):
+        return self.length*self.breadth
+    def perimeter(self):
+        return 2*(self.length+self.breadth)
+
+r=rectangle()
+
+
+instance variables:
+__init__:instance variables declared insie init methods
+self.instance variables declared with self
+
+instance methods:
+meth(self) first parameter is always self
+self is reference to current object
+self. instance variables accessed using self
+
+---self is not a keyword
+ways of creating instance variables:
